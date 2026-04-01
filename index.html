@@ -3,50 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen Phone Repaire </title>
+    <title>Massi Phone Repair</title>
     <link rel="stylesheet" href="styl.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Massi Phone Repaire</h1>
-    <p>Réparation rapide et fiable pour tous les types de téléphones</p>
-    <a href="#projet"> <button >Lancez votre projet</button></a>
-   
-</header>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-mobile-alt"></i>
+            <span>MPR</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<section class="hero">
-    <h2>Bienvenue chez le réparateur de téléphones</h2>
-    <p>Nous sommes là pour vous offrir les meilleurs services de réparation de téléphones dans les meilleurs délais</p>
-</section>
+    <!-- En-tête -->
+    <header id="accueil">
+        <h1>Massi Phone Repair</h1>
+        <p>Réparation rapide et fiable pour tous les types de téléphones</p>
+    </header>
 
-<section id="projet" class="services">
-    <div class="service ">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Réparation de l'écran</h3>
-        <p>Nous réparons les écrans cassés ou endommagés</p>
-    </div>
-    <div class="service ">
-        <i class="fas fa-battery"></i>
-        <h3>Remplacement de la batterie</h3>
-        <p>Nous remplaçons les batteries usagées ou endommagées par des batteries neuves</p>
-    </div>
-    <div class="service ">
-        <i class="fas fa-cog"></i>
-        <h3>Résolution des problèmes système</h3>
-        <p>Résolution des problèmes système et logiciels sur les téléphones.</p>
-    </div>
-</section>
+    <!-- Section héro -->
+    <section class="hero">
+        <div class="container">
+            <h2>Bienvenue chez votre réparateur de confiance</h2>
+            <p>Nous offrons les meilleurs services de réparation de téléphones dans les plus brefs délais</p>
+            <a href="#services"><button class="btn-primary">Commencez votre réparation</button></a>
+        </div>
+    </section>
 
-<section class="contact">
-    <h2>Contactez-nous</h2>
-    <p>Numéro de téléphone : 0123456789</p>
-    <p>Ville : Oran</p>
-    <button>Appelez-nous</button>
-</section>
+    <!-- Section services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Réparation d'écran</h3>
+                    <p>Réparation rapide des écrans cassés ou endommagés avec pièces d'origine</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <h3>Batterie neuve</h3>
+                    <p>Remplacement par des batteries de haute qualité et longue durée</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Problèmes système</h3>
+                    <p>Diagnostic et résolution des problèmes logiciels et matériels</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Massi Phone Repair. جميع الحقوق محفوظة.</p>
-</footer>
+    <!-- Section contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><strong>0123 456 789</strong></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <p>Oran, Algérie</p>
+                </div>
+            </div>
+            <a href="tel:0123456789" class="btn-primary btn-large">Appeler maintenant</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Massi Phone Repair. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
